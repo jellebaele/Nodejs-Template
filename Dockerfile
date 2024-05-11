@@ -8,5 +8,6 @@ RUN yarn install
 COPY . .
 EXPOSE ${PORT}
 
+RUN yarn build
 
-CMD ["sh", "-c", "if [ \"$NODE_ENV\" = \"production\" ]; then yarn run start:prod; else yarn run start:dev; fi"]
+CMD ["sh", "-c", "if [ \"$NODE_ENV\" = \"production\" ]; then yarn run start; else yarn run dev; fi"]
