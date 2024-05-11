@@ -1,7 +1,7 @@
-// src/app.ts
 import express, { json, urlencoded, Response as ExResponse, Request as ExRequest } from 'express';
 import { RegisterRoutes } from '../build/routes';
 import swaggerUi from 'swagger-ui-express';
+import { notFoundHandler, validationErrorHandler } from './middelware/errorHandler';
 
 export const app = express();
 
@@ -18,3 +18,6 @@ app.use('/docs', swaggerUi.serve, async (_req: ExRequest, res: ExResponse) => {
 });
 
 RegisterRoutes(app);
+
+app.use(notFoundHandler);
+app.use(validationErrorHandler);
