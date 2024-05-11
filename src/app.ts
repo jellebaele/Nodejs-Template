@@ -1,7 +1,7 @@
 import express, { json, urlencoded, Response as ExResponse, Request as ExRequest } from 'express';
 import { RegisterRoutes } from '../build/routes';
 import swaggerUi from 'swagger-ui-express';
-import { notFoundHandler, validationErrorHandler } from './middelware/errorHandlers';
+import { notFoundHandler, validationErrorHandler } from './middleware/errorHandlers';
 
 export const app = express();
 
