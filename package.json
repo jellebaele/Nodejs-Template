@@ -8,7 +8,9 @@
     "build": "rimraf ./build && tsoa spec-and-routes && tsc",
     "start": "node build/src/server.js",
     "prepare": "husky",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src",
+    "precommit": "npm run test && npm run lint"
   },
   "keywords": [],
   "author": "",
