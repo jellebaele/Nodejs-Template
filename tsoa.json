@@ -4,7 +4,15 @@
   "controllerPathGlobs": ["src/**/*Controller.ts"],
   "spec": {
     "outputDirectory": "build",
-    "specVersion": 3
+    "specVersion": 3,
+    "spec": {
+      "servers": [
+        {
+          "url": "http://localhost:8080/api/v1",
+          "description": "Local development"
+        }
+      ]
+    }
   },
   "routes": {
     "routesDir": "build"
