@@ -1,9 +1,11 @@
 - Features:
-  - Docker with hot reload
-  - Production image
-  - typescript setup
+  V Docker with hot reload
+  V Production image
+  V typescript setup
+
+  - tsoa
   - Husky
   - linter
   - prettier
-  - tsoa
+
   - debugging
