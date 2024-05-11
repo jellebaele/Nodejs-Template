@@ -2,9 +2,12 @@ version: '3.6'
 
 services:
   node-server:
-    build: .
+    build:
+      context: .
+      args:
+        - PORT=${PORT}
     ports:
-      - 3000:3000
+      - 3001:${PORT}
     volumes:
       - ./src:/app/src
     env_file:
