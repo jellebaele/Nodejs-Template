@@ -8,7 +8,7 @@ export const app = express();
 // Use body parser to read seent json payloads
 app.use(
   urlencoded({
-    extended: true,
+    extended: true
   })
 );
 app.use(json());
