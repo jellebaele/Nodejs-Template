@@ -13,5 +13,5 @@ app.use('/api', router);
 const port = process.env.PORT || 3232;
 
 app.listen(port, () => {
-  console.log(`server listening on http://localhost:${port}`);
+  console.log(`Server listening on http://localhost:${port}`);
 });

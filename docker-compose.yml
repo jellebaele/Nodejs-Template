@@ -6,6 +6,7 @@ services:
       context: .
       args:
         - PORT=${PORT}
+        - NODE_ENV=${NODE_ENV:-development}
     ports:
       - 3001:${PORT}
     volumes:

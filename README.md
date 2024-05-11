@@ -6,3 +6,4 @@
   - linter
   - prettier
   - tsoa
+  - debugging
