@@ -4,7 +4,7 @@ import { Router } from 'express';
 const app = express();
 const router = Router();
 
-router.get('/', async (req, res) => {
+router.get('/', async (_, res) => {
   res.status(200).json({ message: 'Hello world' });
 });
 
