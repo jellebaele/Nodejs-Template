@@ -4,9 +4,10 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "dev": "concurrently \"nodemon --legacy-watch\" \"nodemon --legacy-watch -x tsoa spec-and-routes\"",
+    "dev": "concurrently \"nodemon --legacy-watch --inspect=0.0.0.0:9229 -L --nolazy src/server.ts\" \"nodemon --legacy-watch -x tsoa spec-and-routes\"",
     "build": "rimraf ./build && tsoa spec-and-routes && tsc",
     "start": "node build/src/server.js",
+    "debug": "nodemon --inspect src/server.ts",
     "prepare": "husky",
     "test": "jest --passWithNoTests",
     "lint": "eslint src",
