@@ -1,5 +1,18 @@
-- Features: V Docker with hot reload V Production image V typescript setup
+# Nodejs template with Typescript and Docker
 
-  V tsoa V Husky V linter V prettier
+A Node.js template which includes:
 
-  X debugging
+- Typescript setup
+- Docker integration
+- ES linting and Prettier for code quality
+- Husky for pre-commit checks
+- Automatic OpenAPI documentation using `tsoa`
+- Debugging setup in VSCode
+
+You can fork/import/copy this project in your repository.
+
+## Copy
+
+## Get started
+
+## Debug
