@@ -8,10 +8,8 @@ services:
         - PORT=${PORT}
         - NODE_ENV=${NODE_ENV:-development}
     ports:
-      - 3001:${PORT}
-      - '9229:9229'
+      - 3000:${PORT}
     volumes:
       - ./src:/app/src
     env_file:
       - .env
-    # command: 'nodemon --inspect=0.0.0.0:9229 -L --nolazy src/server.ts'

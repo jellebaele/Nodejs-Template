@@ -1,8 +1,8 @@
 {
-  "name": "node_docker_v3",
+  "name": "typescript-docker-template",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "src/server.ts",
   "scripts": {
     "dev": "concurrently \"nodemon --legacy-watch --inspect=0.0.0.0:9229 -L --nolazy src/server.ts\" \"nodemon --legacy-watch -x tsoa spec-and-routes\"",
     "build": "rimraf ./build && tsoa spec-and-routes && tsc",
@@ -14,7 +14,7 @@
     "precommit": "npm run test && npm run lint"
   },
   "keywords": [],
-  "author": "",
+  "author": "jellebaele@hotmail.com",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
