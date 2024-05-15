@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "author": "jellebaele@hotmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
     "joi": "^17.13.1",
