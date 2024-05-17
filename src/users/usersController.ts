@@ -9,7 +9,7 @@ import {
   Route,
   Response,
   SuccessResponse,
-  Tags,
+  Tags
 } from 'tsoa';
 import { User } from './user';
 import { UsersService, UserCreationParams } from './usersService';

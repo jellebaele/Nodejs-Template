@@ -6,6 +6,9 @@ COPY package*.json ./
 RUN yarn install
 
 COPY . .
+
+# Default port = 3000
+ARG PORT=3000
 EXPOSE ${PORT}
 
 RUN yarn build
