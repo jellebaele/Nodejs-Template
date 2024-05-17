@@ -77,7 +77,8 @@ $ yarn run build
       $ yarn run dev
       ```
 
-5. Create and run the application for production mode (Set `NODE_ENV=production` in the `.env` file)
+5. Once the app is started, you can go visit the swagger documentation via http://localhost:_\<port_number\>_/docs (the default port is 3000).
+6. Create and run the application for production mode (Set `NODE_ENV=production` in the `.env` file)
    1. With Docker:
    ```
    $ docker compose up --build
