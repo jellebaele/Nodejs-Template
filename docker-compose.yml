@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        - PORT=${PORT}
+        - PORT=${PORT:-3000}
         - NODE_ENV=${NODE_ENV:-development}
     ports:
       - 3000:${PORT:-3000}
